@@ -5,6 +5,8 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using CsvHelper.Configuration;
 
+//dotnet run --project SwaggerExtractor -- --input swagger.json --output ApiDocsData.csv
+
 var inputOption = new Option<FileInfo>("--input", "Path to the Swagger JSON file") { IsRequired = true };
 var outputOption = new Option<FileInfo>("--output", "Path to save CSV file") { IsRequired = true };
 
